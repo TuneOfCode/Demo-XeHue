@@ -1,0 +1,1675 @@
+/* Thuộc tính chung */
+*{
+    box-sizing: border-box;
+}
+h2{
+    color: blue;
+}
+font{
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    min-height: 411px;
+}
+.container{
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.clear{
+    clear: both;
+}
+
+/* ----------------------------------------------------- */
+
+/* Hotline - Đăng nhập - Đăng ký (Header) */
+.hotline-logup-login{
+    background-color: rgb(35, 35, 241);
+    padding: 8px 5px;
+    margin: -8px -8px;
+}
+.header-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+/* Hotline */
+.header-container a{
+    text-decoration: none;
+}
+.fa-phone{
+    display: none;
+}
+.header-container a span{
+    font-size: 20px;
+    margin: 0 20px;
+    color: red;
+    font-weight: 700;
+    text-shadow:#fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px;
+}
+/* Đăng nhập - Đăng ký */
+#logup{
+    color: white;
+    margin: -5px 5px;
+    font-size: 15px;
+}
+#login{
+    color:white;
+    margin: 0px 5px;
+    border-left: 1px solid white;
+    padding: 5px 5px;
+}
+#logup img, #login img{
+    width: auto;
+    height: 30px;
+    margin: -8px 5px;
+}
+@media (min-width: 0px) and (max-width: 572px){
+    .header-container a span{
+        display: none;
+    }
+    .fa-phone{
+        display: block;
+        color: red;
+        text-shadow:#fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px;
+        margin: 5px 5px;
+    }
+}
+
+/* Logo - Thanh navbar */
+.logo-navbar{
+    background-color: #5B7FEC;
+    margin: 5px -8px;
+    padding: 10px 0;
+    height: 81.6px;
+    line-height: 80px;
+}
+.logo-navbar img{
+    position: relative;
+    top: -60px;
+    margin-left: 10%;
+}
+.navbar-list{
+    display: block;
+    float: right;
+    margin-right: 15%;
+    margin-top: -30px;
+}
+.navbar-list li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.navbar-list li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+.home{
+    background-color: #f5a720;
+    height: 81.6px;
+    display: block;
+    
+}
+.navbar-list li:hover{
+    background-color: #f5a720;
+}
+#btn-navbar, .button-navbar{
+    display: none;
+}
+@media (min-width: 1200px) and (max-width: 1252px){
+    .logo-navbar img{
+        position: relative;
+        top: -60px;
+        margin-left: 5%;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: 5%;
+    }
+    #btn-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 986px) and (max-width: 1199px){
+    .logo-navbar img {
+        position: relative;
+        top: -60px;
+        margin-left: 10%;
+        width: 150px;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: 10%;
+    }
+    .navbar-list li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #btn-navbar, .button-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 788px) and (max-width: 985px){
+    .logo-navbar img {
+        position: relative;
+        top: -60px;
+        margin-left: 0%;
+        width: 150px;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: -10px;
+    }
+    .navbar-list li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #btn-navbar, .button-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 788px){
+    .logo-navbar{
+        background-color: #5B7FEC;
+        margin: 5px -8px;
+        padding: 0px 0;
+        height: auto;
+        line-height: 80px;
+        float: left;
+        width: 105%;
+        padding-right: 10px;
+        padding-left: -5px;
+        clear: both;
+    }
+    .logo-navbar img{
+        position: relative;
+        top: -20px;
+        margin-left: 10%;
+        float: left;
+        height: 65px;
+    }
+    .navbar-list{
+        display: none;
+        margin-top: 45px;
+        padding: 5px 0px;
+        margin-right: -5%;
+        width: 105%;
+    }
+    .navbar-list li{
+        display: block;
+        list-style: none;
+        margin: 0 -5%;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        width: 105%;
+        margin-left: 45px;
+    }
+    .button-navbar{
+        float: right;
+        margin: 0 20px;
+        display: inline-block;
+    }
+    #btn-navbar{
+        display: block;
+        margin-right: -10px;
+        height: 30px;
+        width: 50px;
+        background-color: #5B7FEC;
+        border: 2px solid white;
+        padding: 0px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #btn-navbar:hover{
+        background-color: #f5a720;
+    }
+    .fa-bars{
+        color: white;
+    }
+}
+
+/* ----------------------------------------------------- */
+
+/* (Ảnh sologan -  Form đặt xe) - Ảnh quảng bá */
+.imgsologan-form-img{
+    display: flex;
+    margin: 0 120px;
+    justify-content: center;
+}
+/* Ảnh sologan - form đặt xe */
+.imgsologan-form{
+    width: 563px;
+}
+.imgsologan img{
+    height: 120px;
+}
+/* form đặt xe */
+.form-bookcar{
+    background-color: #efefef;
+    font-weight: 700;
+}
+.form-bookcar h2{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+}
+.title-bookcar{
+    text-align: center;
+    background-color: #275fff;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+.title-bookcar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    border: 4px solid #20346d;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.title-bookcar::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    border: 4px solid #20346d;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+/* Hành trình */
+.way{
+    display: flex;
+    flex-direction: column;
+}
+#way-select{
+    height: 30px;
+    border: none;
+    outline:none;
+}
+/* Số điện thoại - Họ tên */
+.phone-name{
+    display: flex;
+    margin: 10px 0px;
+}
+#phone-input, #name-input{
+    width: 240px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+
+/* Ngày đi - Giờ đi */
+.day-time{
+    display: flex;
+}
+#day-input{
+    width: 180px;
+    border: none;
+    outline:none;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+#day-input, #time-input{
+    width: 240px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+/* Nơi đón - Nơi đến */
+.pickup-arrive{
+    display: flex;
+    margin: 15px 0px;
+}
+.place-pickup{
+    display: flex;
+    flex-direction: column;
+}
+.place-arrive{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+#pickup-input, #arrive-input{
+    width: 240px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+/* Thuê xe - Người lớn - Trẻ em */
+.rent-adult-children{
+    display: flex;
+}
+#rent-input{
+    transform: scale(2);
+    border: none;
+    outline:none;
+}
+#rent-select{
+    margin: 0 20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+.rent-content{
+    display: flex;
+    margin: 5px 0;
+}
+#adult-input, #children-input{
+    width: 100px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+.adult{
+    margin-left: 20px;
+}
+.children{
+    margin: 5px 0px;
+}
+/* Nút đặt xe */
+.btn-book-car{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+#book-button{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #f29a00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f29a00;
+}
+#book-button:hover{
+    background-color: #be7b07;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Ảnh quảng bá */
+.img-adds img{
+    margin: 0 20px;
+    height: 622px;
+}
+@media (min-width: 1150px) and (max-width: 1252px){
+    .imgsologan-form-img {
+        display: flex;
+        margin: 0 60px;
+    }
+    .imgsologan-form {
+        width: 500px;
+    }
+    .imgsologan-form {
+        width: 500px;
+    }
+    .imgsologan img {
+        height: 120px;
+        width: 500px;
+    }
+    .img-adds img {
+        margin: 0 20px;
+        height: 630px;
+        width: 500px;
+    }
+    #phone-input, #name-input {
+        width: 210px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    #day-input, #time-input {
+        width: 210px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    #pickup-input, #arrive-input {
+        width: 210px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    #rent-select {
+        margin: 0 20px;
+        width: 170px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    #adult-input, #children-input {
+        width: 100px;
+        border: none;
+        height: 25px;
+        outline: none;
+    }
+
+}
+@media screen and (min-width: 985px) and (max-width: 1149px){
+    .imgsologan-form-img {
+        display: flex;
+        margin: 0 40px;
+        align-content: center;
+    }
+    .imgsologan-form {
+        width: 455px;
+    }
+    .imgsologan-form {
+        width: 455px;
+    }
+    .imgsologan img {
+        height: 120px;
+        width: 455px;
+    }
+    .img-adds img {
+        margin: 0 20px;
+        height: 625px;
+        width: 400px;
+    }
+    #phone-input, #name-input, #day-input, #time-input, #pickup-input, #arrive-input{
+        width: 188px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    #rent-select {
+    margin: 0 5px;
+    width: 162px;
+    height: 25px;
+    border: none;
+    outline: none;
+    }
+    #rent-select {
+        margin: 0 5px;
+        width: 162px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .adult {
+        margin-left: 34px;
+    }
+    #adult-input, #children-input {
+        width: 85px;
+        border: none;
+        outline: none;
+    }
+
+}
+@media screen and (min-width: 788px) and (max-width: 984px){
+    .imgsologan-form-img {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 555px;
+        align-items: center;
+    }
+    .img-adds img {
+        margin: 20px 0px;
+        height: 622px;
+        width: 563px;
+    }
+    .phone-name, .day-time, .pickup-arrive {
+        display: flex;
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+    .phone, .name, .day,  .place-pickup{
+        display: flex;
+        flex-direction: column;
+    }
+    .time, .place-arrive{
+        margin: 10px 0px;
+    }
+    #way-select, #phone-input, #name-input, #day-input, #time-input, #pickup-input, #arrive-input{
+        width: 523px;
+    }
+    .rent-adult-children {
+        display: flex;
+        flex-direction: column;
+    }
+    .rent-content {
+        display: flex;
+        margin: 5px 0px;
+        width: 540px;
+    }
+    #rent-select {
+        margin-left: 10px;
+        width: 523px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .adult {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #adult-input, #children-input{
+        margin: 5px 0px;
+        width: 523px;
+        height: 25px;
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (min-width: 630px) and (max-width: 788px){
+    .imgsologan-form-img {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 555px;
+    }
+    .imgsologan img {
+        height: 80px;
+        min-width: 100%;
+    }
+    .img-adds img {
+        margin: 20px 0px;
+        height: 622px;
+        width: 563px;
+    }
+    .phone-name, .day-time, .pickup-arrive {
+        display: flex;
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+    .phone, .name, .day,  .place-pickup{
+        display: flex;
+        flex-direction: column;
+    }
+    .time, .place-arrive{
+        margin: 10px 0px;
+    }
+    #way-select, #phone-input, #name-input, #day-input, #time-input, #pickup-input, #arrive-input{
+        width: 523px;
+    }
+    .rent-adult-children {
+        display: flex;
+        flex-direction: column;
+    }
+    .rent-content {
+        display: flex;
+        margin: 5px 0px;
+        width: 540px;
+    }
+    #rent-select {
+        margin-left: 10px;
+        width: 523px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .adult {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #adult-input, #children-input{
+        margin: 5px 0px;
+        width: 523px;
+        height: 25px;
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 440px) and (max-width: 629px){
+    .imgsologan-form-img {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 550px;
+        max-width: 100%;
+        align-items: center;
+    }
+    .imgsologan img {
+        height: 80px;
+        min-width: 100%;
+    }
+    .imgsologan-form {
+        width: 400px;
+        max-height: 100%;
+    }
+    .img-adds img {
+        margin: 20px 0px;
+        height: 622px;
+        width: 400px;
+        max-width: 100%;
+    }
+    .phone-name, .day-time, .pickup-arrive {
+        display: flex;
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+    .phone, .name, .day,  .place-pickup{
+        display: flex;
+        flex-direction: column;
+    }
+    .time, .place-arrive{
+        margin: 10px 0px;
+    }
+    #way-select, #phone-input, #name-input, #day-input, #time-input, #pickup-input, #arrive-input{
+        width: 360px;
+    }
+    #day-input, #time-input {
+        width: 360px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .rent-adult-children {
+        display: flex;
+        flex-direction: column;
+    }
+    .rent-content {
+        display: flex;
+        margin: 5px 0px;
+        width: 540px;
+    }
+    #rent-select {
+        margin-left: 10px;
+        width: 330px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .adult {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #adult-input, #children-input{
+        margin: 5px 0px;
+        width: 360px;
+        height: 25px;
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 439px){
+    .imgsologan-form-img {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 550px;
+        max-width: 100%;
+        align-items: center;
+    }
+    .imgsologan img {
+        height: 40px;
+        min-width: 100%;
+    }
+    .imgsologan-form {
+        width: 230px;
+        max-height: 100%;
+    }
+    .img-adds img {
+        margin: 20px 0px;
+        height: 622px;
+        width: 230px;
+        /* max-width: 100%; */
+    }
+    .phone-name, .day-time, .pickup-arrive {
+        display: flex;
+        margin: 10px 0px;
+        flex-direction: column;
+    }
+    .phone, .name, .day,  .place-pickup{
+        display: flex;
+        flex-direction: column;
+    }
+    .time, .place-arrive{
+        margin: 10px 0px;
+    }
+    #way-select, #phone-input, #name-input, #day-input, #time-input, #pickup-input, #arrive-input{
+        width: 200px;
+    }
+    .rent-adult-children {
+        display: flex;
+        flex-direction: column;
+    }
+    .rent-content {
+        display: flex;
+        margin: 5px 0px;
+        width: 540px;
+    }
+    #rent-select {
+        margin-left: 10px;
+        width: 170px;
+        height: 25px;
+        border: none;
+        outline: none;
+    }
+    .adult {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #adult-input, #children-input {
+        margin: 5px 0px;
+        width: 200px;
+        height: 25px;
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* -------------------------------------------------------------- */
+/* Mục tiện ích */
+.tool h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 10px;
+}
+.tool span{
+    text-transform: uppercase;
+    color: #f29a00;   
+    font-weight: 600;
+    font-size: 30px;
+}
+.tool-img{
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+.img-commit{
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 265px;
+}
+.img-commit{
+    background-color: #4d6fd6;
+    margin: -25px 15px;
+    color: white;
+    font-size: 18px;
+}
+.img-four-commit{
+    width: 130px;
+}
+#img-quality, #img-price{
+    background-color: #6fabfd;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1252px){
+    .tool-img {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .img-commit {
+        width: 225px;
+        background-color: #4d6fd6;
+        margin: 15px 5px;
+        color: white;
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .img-four-commit{
+        width: 130px;
+    }
+    
+}
+/* ---------------------------------------------------------------- */
+/* Mục tải xuống */
+.download{
+    margin: 50px 0;
+}
+.download h2{
+    text-align: center;
+    color: #f29a00;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.download-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.android-ios {
+    border: 1px solid #f29a00;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 300px;
+    margin: 10px 20px;
+    text-align: center;
+}
+.android-ios:hover{
+    box-shadow:  #be7b07 0 0 10px;
+}
+.android-ios > img{
+    height: 45px;
+    margin: 0 10px;
+}
+/* ----------------------------------------------------------------- */
+/* Mục tin tức và sự kiện */
+.news-event{
+    text-align: center;
+    background-color: #efefef;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+.news-event h2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #4d6fd6;
+    font-weight: 600;
+}
+.news-event-content{
+    color: #333;
+    font-size: 20px;
+}
+/* ----------------------------------------------------------------- */
+/* Các tuyến đường */
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    color: #4d6fd6;
+}
+.way-popular{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+.img-way{
+    margin: 0 50px;
+}
+.img-move{
+    height: 60px;
+    margin: 50px 25px;
+}
+/* ----------------------------------------------------------------- */
+/* Mục Hệ thống và nhà xe */
+.system{
+    text-align: center;
+    background-color: #efefef;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+.system-content{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
+/* ----------------------------------------------------------------- */
+/* Liên hệ - Thông tin - Lượt truy cập - Liên kết (Footer) */
+footer{
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: #00264f;
+    padding: 20px 0px;
+    color: white;
+}
+/* Liên hệ */
+.contact-content{
+    float: left;
+    width: 25%;
+    font-size: 18px;
+}
+.img-contact{
+    height: 75px;
+    margin: -20px 15px;
+}
+.email{
+    margin: 20px 0;
+    font-size: 15px;
+    color: #f29a00;
+}
+.address{
+    font-size: 16px;
+}
+.tel{
+    font-size: 16px;
+    color: #f29a00;
+}
+.website{
+    font-size: 17px;
+    color: #f29a00;
+}
+/* Thông tin */
+.information{
+    float: left;
+    width: 25%;
+}
+.information-content{
+    margin-top: 55px;
+}
+.information h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.list-information{
+    margin-left: -15px;
+}
+.list-information li{
+    list-style: none;
+    padding: 5px 0;
+    width: 132px;
+}
+@keyframes move{
+    from{left: 0px;}
+    to{left: 10px;}
+}
+.list-information li:hover{
+    animation-name: move;
+    animation-duration: 0.25s;
+    position: relative;
+    left: 10px;
+}
+
+.list-information li a{
+    text-decoration: none;
+    color: #f29a00;
+    font-size: 18px;
+}
+.list-information li a:hover{
+    color: #f8b43f;
+}
+
+.fa-angle-right{
+    color: #f29a00;
+    padding: 0 5px
+}
+
+/* Lượt truy cập */
+.access{
+    float: left;
+    width: 10%;
+    margin-top: -15px;
+}
+.access-content{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.numbers-online, .total-online{
+    color: #f29a00;
+    font-size: 30px;
+}
+/* Liên kết */
+.link{
+    float: left;
+    width: 32%;
+    margin-left: 60px;
+}
+.link-content{
+    margin: -40px 31px;
+}
+.btn-top{
+    border: 1px solid red;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    right: -100%;
+    top: 10px;
+}
+.btn-top i{
+    margin: 0px 13px;
+    position: relative;
+    top: 5px;
+}
+.fa-angle-up{
+    color: white;
+}
+.link-content p {
+    color: #4470a2;
+    font-style: italic;
+    line-height: 25px;
+}
+.email-register{
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+}
+#email-input{
+    border-radius: 50px;
+    height: 35px;
+    width: 500px;
+    outline: none;
+}
+.btn-register{
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #f29a00;
+    padding: 0 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    right: 25px;
+    width: 165px;
+}
+.btn-register:hover{
+    background-color: #744b06;
+}
+.link-social{
+    display: flex;
+    margin-left: -55px;
+}
+.link-social li{
+    list-style: none;
+    margin-left: 20px;
+}
+.fa-facebook, .fa-google, .fa-twitter{
+    color: #4470a2;
+}
+.fa-facebook:hover, .fa-google:hover, .fa-twitter:hover{
+    color: #f29a00;
+}
+.fast-order{
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    border: 1px solid #275fff;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 100px;
+    margin: -60px 200px;
+    background-color: #275fff;
+    position: fixed;
+    bottom: 30%;
+    right: -12%;
+    cursor: pointer;
+}
+.fast-order p{
+    font-style: normal;
+    color: white;
+    border: 1px solid;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+.copyright{
+    font-size: 18px;
+    color: #4d6fd6;
+}
+.support-online {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
+@keyframes zoom{
+    0%{transform:scale(.5);opacity:0}50%{opacity:1}to{opacity:0;transform:scale(1)}
+}
+@keyframes lucidgenzalo{
+    0%{transform:rotate(-25deg)}50%{transform:rotate(25deg)}
+}
+.jscroll-to-top{
+    bottom:100px
+}
+.fcta-zalo-ben-trong-nut svg path{
+    fill:#fff
+}
+
+.fcta-zalo-nen-nut, div.fcta-zalo-mess{
+    box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16)
+}
+.fcta-zalo-vi-tri-nut {
+    position: fixed;
+    bottom: 75px;
+    left: 140px;
+    z-index: 999;
+}
+.fcta-zalo-nen-nut {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #0068ff;
+    border-radius: 50%;
+    position: fixed;
+    left: 9%;
+}
+.fcta-zalo-nen-nut::after,.fcta-zalo-nen-nut::before{
+    content:"";
+    position:absolute;
+    border:1px solid #0068ff;
+    background:#0068ff80;
+    z-index:-1;
+    left:-20px;
+    right:-20px;
+    top:-20px;
+    bottom:-20px;
+    border-radius:50%;
+    animation:zoom 1.9s linear infinite
+}
+.fcta-zalo-nen-nut::after{
+    animation-delay:.4s
+}
+.fcta-zalo-ben-trong-nut,.fcta-zalo-ben-trong-nut i{
+    transition:all 1s
+}
+.fcta-zalo-ben-trong-nut{
+    position:absolute;text-align:center;width:60%;height:60%;left:10px;bottom:25px;line-height:70px;font-size:25px;opacity:1
+}
+.fcta-zalo-ben-trong-nut i{
+    animation:lucidgenzalo 1s linear infinite
+}
+.fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,.fcta-zalo-text{
+    opacity:0
+}
+.fcta-zalo-nen-nut:hover i{
+    transform:scale(.5);transition:all .5s ease-in
+}
+.fcta-zalo-text a{
+    text-decoration:none;
+    color:#fff
+}
+.fcta-zalo-text{position:absolute;top:6px;text-transform:uppercase;font-size:12px;font-weight:700;transform:scaleX(-1);transition:all .5s;line-height:1.5}.fcta-zalo-nen-nut:hover .fcta-zalo-text{transform:scaleX(1);opacity:1}div.fcta-zalo-mess{position:fixed;bottom:29px;right:58px;z-index:99;background:#fff;padding:7px 25px 7px 15px;color:#0068ff;border-radius:50px 0 0 50px;font-weight:700;font-size:15px}.fcta-zalo-mess span{color:#0068ff!important}
+                        span#fcta-zalo-tracking{font-family:Roboto;line-height:1.5}.fcta-zalo-text{font-family:Roboto}
+div.fcta-zalo-mess {
+    position: fixed;
+    bottom: 30px;
+    right: 58px;
+    z-index: 99;
+    background: #fff;
+    padding: 7px 25px 7px 15px;
+    color: #0068ff;
+    border-radius: 50px 0 0 50px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 10px;
+    left: 1%;
+    width: 130px;
+}
+@media screen and (min-width: 901px) and (max-width: 1252px){
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 30%;
+        right: -15%;
+        cursor: pointer;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 300px;
+        outline: none;
+    }.fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 75px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 10%;
+    }
+}
+
+@media screen and (min-width: 823px) and (max-width: 900px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: 420px;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 300px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 45px;
+        background-color: #f29a00;
+        padding: 0px 26px;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+        position: relative;
+        right: 25px;
+        width: 221px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -20%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 3%;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 75px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 10%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 822px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: 600px;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-content {
+        float: left;
+        width: 33.33%;
+        font-size: 18px;
+    }
+    .information {
+        float: left;
+        width: 33.33%;
+    }
+    .access {
+        float: left;
+        width: 33.33%;
+        margin-top: -15px;
+    }
+    .link {
+        float: left;
+        width: 100%;
+    }
+    .copyright {
+        font-size: 18px;
+        color: #4d6fd6;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        right: -85%;
+        top: 10px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -24%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 3%;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 72px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 599px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-information-link-access{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-content {
+        font-size: 18px;
+    }
+    .information, .link{
+        float: none;
+        width: auto;
+    }
+    .access {
+        margin-top: -15px;
+    }
+    .link-content {
+        margin: -30px -65px;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        /* right: -95%; */
+        right: -72%;
+        top: 10px;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 220px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 40px;
+        background-color: #f29a00;
+        padding: 0 12px;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        position: relative;
+        right: 52px;
+        width: 100px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -33%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+    }
+    div.fcta-zalo-mess {
+        position: fixed;
+        bottom: 10px;
+        right: 58px;
+        z-index: 99;
+        background: #fff;
+        padding: 7px 25px 7px 15px;
+        color: #0068ff;
+        border-radius: 50px 0 0 50px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 58px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 30%;
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 399px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-information-link-access{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-content {
+        font-size: 18px;
+    }
+    .information, .link{
+        float: none;
+        width: auto;
+    }
+    .access {
+        margin-top: -15px;
+    }
+    .link-content {
+        margin: -30px -65px;
+    }
+    .link-content p {
+        color: #4470a2;
+        font-style: italic;
+        line-height: 25px;
+        font-size: 10px;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        right: -72%;
+        top: 10px;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 220px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 40px;
+        background-color: #f29a00;
+        padding: 0 12px;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        position: relative;
+        right: 52px;
+        width: 100px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -48%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+    }
+    .copyright {
+        font-size: 15px;
+        color: #4d6fd6;
+    }
+    div.fcta-zalo-mess {
+        position: fixed;
+        bottom: 10px;
+        right: 58px;
+        z-index: 99;
+        background: #fff;
+        padding: 7px 25px 7px 15px;
+        color: #0068ff;
+        border-radius: 50px 0 0 50px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 58px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 40%;
+    }
+    
+}

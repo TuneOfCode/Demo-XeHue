@@ -1,0 +1,997 @@
+/* Thuộc tính chung */
+*{
+    box-sizing: border-box;
+}
+h2{
+    color: blue;
+}
+font{
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    min-height: 411px;
+}
+.container{
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+.clear{
+    clear: both;
+}
+
+/* ----------------------------------------------------- */
+
+/* Hotline - Đăng nhập - Đăng ký (Header) */
+.hotline-logup-login{
+    background-color: rgb(35, 35, 241);
+    padding: 8px 5px;
+    margin: -8px -8px;
+}
+.header-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+/* Hotline */
+.header-container a{
+    text-decoration: none;
+}
+.fa-phone{
+    display: none;
+}
+.header-container a span{
+    font-size: 20px;
+    margin: 0 20px;
+    color: red;
+    font-weight: 700;
+    text-shadow:#fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px;
+}
+/* Đăng nhập - Đăng ký */
+#logup{
+    color: white;
+    margin: -5px 5px;
+    font-size: 15px;
+}
+#login{
+    color:white;
+    margin: 0px 5px;
+    border-left: 1px solid white;
+    padding: 5px 5px;
+}
+#logup img, #login img{
+    width: auto;
+    height: 30px;
+    margin: -8px 5px;
+}
+@media (min-width: 0px) and (max-width: 572px){
+    .header-container a span{
+        display: none;
+    }
+    .fa-phone{
+        display: block;
+        color: red;
+        text-shadow:#fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px, #fff 0 0 5px;
+        margin: 5px 5px;
+    }
+}
+
+/* Logo - Thanh navbar */
+.logo-navbar{
+    background-color: #5B7FEC;
+    margin: 5px -8px;
+    padding: 10px 0;
+    height: 81.6px;
+    line-height: 80px;
+}
+.logo-navbar img{
+    position: relative;
+    top: -60px;
+    margin-left: 10%;
+}
+.navbar-list{
+    display: block;
+    float: right;
+    margin-right: 15%;
+    margin-top: -30px;
+}
+.navbar-list li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.navbar-list li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+.home{
+    background-color: #f5a720;
+    height: 81.6px;
+    display: block;
+    
+}
+.navbar-list li:hover{
+    background-color: #f5a720;
+}
+#btn-navbar, .button-navbar{
+    display: none;
+}
+@media (min-width: 1200px) and (max-width: 1252px){
+    .logo-navbar img{
+        position: relative;
+        top: -60px;
+        margin-left: 5%;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: 5%;
+    }
+    #btn-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 986px) and (max-width: 1199px){
+    .logo-navbar img {
+        position: relative;
+        top: -60px;
+        margin-left: 10%;
+        width: 150px;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: 10%;
+    }
+    .navbar-list li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #btn-navbar, .button-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 788px) and (max-width: 985px){
+    .logo-navbar img {
+        position: relative;
+        top: -60px;
+        margin-left: 0%;
+        width: 150px;
+    }
+    .navbar-list{
+        display: block;
+        float: right;
+        margin-right: -10px;
+    }
+    .navbar-list li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #btn-navbar, .button-navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 788px){
+    .logo-navbar{
+        background-color: #5B7FEC;
+        margin: 5px -8px;
+        padding: 0px 0;
+        height: auto;
+        line-height: 80px;
+        float: left;
+        width: 105%;
+        padding-right: 10px;
+        padding-left: -5px;
+        clear: both;
+    }
+    .logo-navbar img{
+        position: relative;
+        top: -20px;
+        margin-left: 10%;
+        float: left;
+        height: 65px;
+    }
+    .navbar-list{
+        display: none;
+        margin-top: 45px;
+        padding: 5px 0px;
+        margin-right: -5%;
+        width: 105%;
+    }
+    .navbar-list li{
+        display: block;
+        list-style: none;
+        margin: 0 -5%;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .navbar-list li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        width: 105%;
+        margin-left: 45px;
+    }
+    .button-navbar{
+        float: right;
+        margin: 0 20px;
+        display: inline-block;
+    }
+    #btn-navbar{
+        display: block;
+        margin-right: -10px;
+        height: 30px;
+        width: 50px;
+        background-color: #5B7FEC;
+        border: 2px solid white;
+        padding: 0px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #btn-navbar:hover{
+        background-color: #f5a720;
+    }
+    .fa-bars{
+        color: white;
+    }
+}
+/* ----------------------------------------------------------------- */
+/* Nội dung */
+.title-content{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.title-content h2{
+    color: #5B7FEC;
+    border-bottom:4px solid #0068ff;
+}
+.title-content span{
+    color: #f29a00;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+/* ----------------------------------------------------------------- */
+/* Liên hệ - Thông tin - Lượt truy cập - Liên kết (Footer) */
+footer{
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: #00264f;
+    padding: 20px 0px;
+    color: white;
+}
+/* Liên hệ */
+.contact-content{
+    float: left;
+    width: 25%;
+    font-size: 18px;
+}
+.img-contact{
+    height: 75px;
+    margin: -20px 15px;
+}
+.email{
+    margin: 20px 0;
+    font-size: 15px;
+    color: #f29a00;
+}
+.address{
+    font-size: 16px;
+}
+.tel{
+    font-size: 16px;
+    color: #f29a00;
+}
+.website{
+    font-size: 17px;
+    color: #f29a00;
+}
+/* Thông tin */
+.information{
+    float: left;
+    width: 25%;
+}
+.information-content{
+    margin-top: 55px;
+}
+.information h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.list-information{
+    margin-left: -15px;
+}
+.list-information li{
+    list-style: none;
+    padding: 5px 0;
+    width: 132px;
+}
+@keyframes move{
+    from{left: 0px;}
+    to{left: 10px;}
+}
+.list-information li:hover{
+    animation-name: move;
+    animation-duration: 0.25s;
+    position: relative;
+    left: 10px;
+}
+
+.list-information li a{
+    text-decoration: none;
+    color: #f29a00;
+    font-size: 18px;
+}
+.list-information li a:hover{
+    color: #f8b43f;
+}
+
+.fa-angle-right{
+    color: #f29a00;
+    padding: 0 5px
+}
+
+/* Lượt truy cập */
+.access{
+    float: left;
+    width: 10%;
+    margin-top: -15px;
+}
+.access-content{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.numbers-online, .total-online{
+    color: #f29a00;
+    font-size: 30px;
+}
+/* Liên kết */
+.link{
+    float: left;
+    width: 32%;
+    margin-left: 60px;
+}
+.link-content{
+    margin: -40px 31px;
+}
+.btn-top{
+    border: 1px solid red;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    right: -100%;
+    top: 10px;
+}
+.btn-top i{
+    margin: 0px 13px;
+    position: relative;
+    top: 5px;
+}
+.fa-angle-up{
+    color: white;
+}
+.link-content p {
+    color: #4470a2;
+    font-style: italic;
+    line-height: 25px;
+}
+.email-register{
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+}
+#email-input{
+    border-radius: 50px;
+    height: 35px;
+    width: 500px;
+    outline: none;
+}
+.btn-register{
+    color: white;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #f29a00;
+    padding: 0 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    right: 25px;
+    width: 165px;
+}
+.btn-register:hover{
+    background-color: #744b06;
+}
+.link-social{
+    display: flex;
+    margin-left: -55px;
+}
+.link-social li{
+    list-style: none;
+    margin-left: 20px;
+}
+.fa-facebook, .fa-google, .fa-twitter{
+    color: #4470a2;
+}
+.fa-facebook:hover, .fa-google:hover, .fa-twitter:hover{
+    color: #f29a00;
+}
+.fast-order{
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    border: 1px solid #275fff;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 100px;
+    margin: -60px 200px;
+    background-color: #275fff;
+    position: fixed;
+    bottom: 30%;
+    right: -12%;
+    cursor: pointer;
+}
+.fast-order p{
+    font-style: normal;
+    color: white;
+    border: 1px solid;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+.copyright{
+    font-size: 18px;
+    color: #4d6fd6;
+}
+.support-online {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
+@keyframes zoom{
+    0%{transform:scale(.5);opacity:0}50%{opacity:1}to{opacity:0;transform:scale(1)}
+}
+@keyframes lucidgenzalo{
+    0%{transform:rotate(-25deg)}50%{transform:rotate(25deg)}
+}
+.jscroll-to-top{
+    bottom:100px
+}
+.fcta-zalo-ben-trong-nut svg path{
+    fill:#fff
+}
+
+.fcta-zalo-nen-nut, div.fcta-zalo-mess{
+    box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16)
+}
+.fcta-zalo-vi-tri-nut {
+    position: fixed;
+    bottom: 75px;
+    left: 140px;
+    z-index: 999;
+}
+.fcta-zalo-nen-nut {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #0068ff;
+    border-radius: 50%;
+    position: fixed;
+    left: 9%;
+}
+.fcta-zalo-nen-nut::after,.fcta-zalo-nen-nut::before{
+    content:"";
+    position:absolute;
+    border:1px solid #0068ff;
+    background:#0068ff80;
+    z-index:-1;
+    left:-20px;
+    right:-20px;
+    top:-20px;
+    bottom:-20px;
+    border-radius:50%;
+    animation:zoom 1.9s linear infinite
+}
+.fcta-zalo-nen-nut::after{
+    animation-delay:.4s
+}
+.fcta-zalo-ben-trong-nut,.fcta-zalo-ben-trong-nut i{
+    transition:all 1s
+}
+.fcta-zalo-ben-trong-nut{
+    position:absolute;text-align:center;width:60%;height:60%;left:10px;bottom:25px;line-height:70px;font-size:25px;opacity:1
+}
+.fcta-zalo-ben-trong-nut i{
+    animation:lucidgenzalo 1s linear infinite
+}
+.fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,.fcta-zalo-text{
+    opacity:0
+}
+.fcta-zalo-nen-nut:hover i{
+    transform:scale(.5);transition:all .5s ease-in
+}
+.fcta-zalo-text a{
+    text-decoration:none;
+    color:#fff
+}
+.fcta-zalo-text{position:absolute;top:6px;text-transform:uppercase;font-size:12px;font-weight:700;transform:scaleX(-1);transition:all .5s;line-height:1.5}.fcta-zalo-nen-nut:hover .fcta-zalo-text{transform:scaleX(1);opacity:1}div.fcta-zalo-mess{position:fixed;bottom:29px;right:58px;z-index:99;background:#fff;padding:7px 25px 7px 15px;color:#0068ff;border-radius:50px 0 0 50px;font-weight:700;font-size:15px}.fcta-zalo-mess span{color:#0068ff!important}
+                        span#fcta-zalo-tracking{font-family:Roboto;line-height:1.5}.fcta-zalo-text{font-family:Roboto}
+div.fcta-zalo-mess {
+    position: fixed;
+    bottom: 30px;
+    right: 58px;
+    z-index: 99;
+    background: #fff;
+    padding: 7px 25px 7px 15px;
+    color: #0068ff;
+    border-radius: 50px 0 0 50px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 10px;
+    left: 1%;
+    width: 130px;
+}
+@media screen and (min-width: 901px) and (max-width: 1252px){
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 30%;
+        right: -15%;
+        cursor: pointer;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 300px;
+        outline: none;
+    }.fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 75px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 10%;
+    }
+}
+
+@media screen and (min-width: 823px) and (max-width: 900px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: 420px;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 300px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 45px;
+        background-color: #f29a00;
+        padding: 0px 26px;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+        position: relative;
+        right: 25px;
+        width: 221px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -20%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 3%;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 75px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 10%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 822px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: 600px;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-content {
+        float: left;
+        width: 33.33%;
+        font-size: 18px;
+    }
+    .information {
+        float: left;
+        width: 33.33%;
+    }
+    .access {
+        float: left;
+        width: 33.33%;
+        margin-top: -15px;
+    }
+    .link {
+        float: left;
+        width: 100%;
+    }
+    .copyright {
+        font-size: 18px;
+        color: #4d6fd6;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        right: -85%;
+        top: 10px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -24%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 3%;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 72px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 599px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-information-link-access{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-content {
+        font-size: 18px;
+    }
+    .information, .link{
+        float: none;
+        width: auto;
+    }
+    .access {
+        margin-top: -15px;
+    }
+    .link-content {
+        margin: -30px -65px;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        /* right: -95%; */
+        right: -72%;
+        top: 10px;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 220px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 40px;
+        background-color: #f29a00;
+        padding: 0 12px;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        position: relative;
+        right: 52px;
+        width: 100px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -33%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+    }
+    div.fcta-zalo-mess {
+        position: fixed;
+        bottom: 10px;
+        right: 58px;
+        z-index: 99;
+        background: #fff;
+        padding: 7px 25px 7px 15px;
+        color: #0068ff;
+        border-radius: 50px 0 0 50px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 58px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 30%;
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 399px) {
+    footer {
+        float: left;
+        width: 100%;
+        height: auto;
+        background-color: #00264f;
+        padding: 20px 0px;
+        color: white;
+    }
+    .contact-information-link-access{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-content {
+        font-size: 18px;
+    }
+    .information, .link{
+        float: none;
+        width: auto;
+    }
+    .access {
+        margin-top: -15px;
+    }
+    .link-content {
+        margin: -30px -65px;
+    }
+    .link-content p {
+        color: #4470a2;
+        font-style: italic;
+        line-height: 25px;
+        font-size: 10px;
+    }
+    .btn-top {
+        border: 1px solid red;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        position: relative;
+        right: -72%;
+        top: 10px;
+    }
+    #email-input {
+        border-radius: 50px;
+        height: 35px;
+        width: 220px;
+        outline: none;
+    }
+    .btn-register {
+        color: white;
+        border-radius: 50px;
+        height: 40px;
+        background-color: #f29a00;
+        padding: 0 12px;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        position: relative;
+        right: 52px;
+        width: 100px;
+    }
+    .fast-order {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+        border: 1px solid #275fff;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        border-radius: 100px;
+        margin: -60px 200px;
+        background-color: #275fff;
+        position: fixed;
+        bottom: 25%;
+        right: -48%;
+        cursor: pointer;
+    }
+    .support-online {
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+    }
+    .copyright {
+        font-size: 15px;
+        color: #4d6fd6;
+    }
+    div.fcta-zalo-mess {
+        position: fixed;
+        bottom: 10px;
+        right: 58px;
+        z-index: 99;
+        background: #fff;
+        padding: 7px 25px 7px 15px;
+        color: #0068ff;
+        border-radius: 50px 0 0 50px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 58px;
+        left: 140px;
+        z-index: 999;
+    }
+    .fcta-zalo-nen-nut {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #0068ff;
+        border-radius: 50%;
+        position: fixed;
+        left: 40%;
+    }
+    
+}

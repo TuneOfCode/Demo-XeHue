@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(https://xehue.vn/img/auth-background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+font{
+    color: red;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #55acee;
+    width: 250px;
+    margin: 10px 0;
+}
+a:hover{
+    color: blue;
+}
+.title-login{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700; 
+    color: #55acee;
+    margin-top: -10px;
+}
+.lb{
+    margin-left: 10px;
+}
+.login{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(255,255,255,.5);
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    margin: 5% auto;
+}
+.form{
+    background-color: #ddd;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.account-pass-repass-name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.accept{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #55acee;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+    
+}
+input[type="text"], input[type="password"], input[type="date"]{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    outline: none;
+}
+.password, .re-password, .name, .email, .birthday, .address{
+    margin: 5px 0;
+}
+input[type="checkbox"], input[type="radio"]{
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.agree{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 975px) {
+    .form{
+        background-color: #ddd;
+        padding: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .login{
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background: rgba(255,255,255,.5);
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 10% auto;
+    }
+    a{
+        font-size: 10px;
+    }
+    input[type="checkbox"], input[type="radio"]{
+        height: 20px;
+        width: 20px;
+    }
+}
