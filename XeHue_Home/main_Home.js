@@ -33,7 +33,7 @@ $('#rent-input').click(function(){
 $(function(){
     if($(".btn-top").length > 0){
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 1000) $(".btn-top").fadeIn();
+            if ($(this).scrollTop() > 500) $(".btn-top").fadeIn();
                 else $(".btn-top").fadeOut();
         });
         $(".btn-top").click(function () {
