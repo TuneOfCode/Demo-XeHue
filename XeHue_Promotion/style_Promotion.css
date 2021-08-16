@@ -401,6 +401,7 @@ footer{
     text-decoration: none;
     color: #f29a00;
     font-size: 18px;
+    text-transform: initial;
 }
 .list-information li a:hover{
     color: #f8b43f;
